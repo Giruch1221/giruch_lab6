@@ -23,7 +23,7 @@ namespace ConsoleApplication2
             Console.WriteLine("Подарок состоит из: ");
             for (int i=1; i<= kolvoSladost; i++)
             {
-                sladost = rand.Next(3) + 1;
+                sladost = rand.Next(2) + 1;
                 switch (sladost)
                 {
                     case 1:
@@ -42,7 +42,7 @@ namespace ConsoleApplication2
                         Console.WriteLine("Название = " + c.Name + " за вес: " + c.Weight);
                         break;
                     case 4:
-                        Alenka a = new Alenka(rand.Next(20) + 10, "112");
+                        Alenka a = new Alenka(rand.Next(20) + 10, "Аленка");
                         podarok.AddSladosti(a);
                         Console.WriteLine("Название = " + a.Name + " за вес: " + a.Weight);
                         break;
@@ -52,6 +52,7 @@ namespace ConsoleApplication2
          
             int Weight = podarok.CountWeight();
            Console.WriteLine("Weight = " + Weight);
+            Console.ReadKey();
         }
     }
 }
