@@ -23,7 +23,7 @@ namespace ConsoleApplication2
             Console.WriteLine("Подарок состоит из: ");
             for (int i=1; i<= kolvoSladost; i++)
             {
-                sladost = rand.Next(2) + 1;
+                sladost = rand.Next(4) + 1;
                 switch (sladost)
                 {
                     case 1:
